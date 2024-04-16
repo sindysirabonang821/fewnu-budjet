@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+
+body{
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+#page1{
+    margin-top: 0px;
+    background-image: url("images/bg-herd.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    height: 100vh;
+    width: 104%;
+    z-index: -1000;
+}
+
+#page1 h1 {
+    position: relative;
+    top: 200px;
+    left: 150px;
+    font-weight: 700;
+    font-size: 44px;
+    color: #ffff;
+    line-height: 45px;
+}
+
+#page1 p{
+    position: relative;
+    top: 240px;
+    left: 150px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffff;
+    line-height: 45px;
+}
+
+#page1 p:nth-child(3){
+    position: relative;
+    top: 270px;
+    left: 150px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#page1 p:nth-child(3) span{
+    display: block;
+    line-height: 25px; 
+}
+
+#page1 p:nth-child(4){
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+.compte {
+    position: relative;
+    top: 320px;
+    left: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.compte > .arrowe {
+    background-color: #04546c;
+    border-radius: 100px 100px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.compte  > .presentation > a {
+    font-family: "Montserrat", Arial, sans-serif;
+    margin-left: -40px;
+    padding: 20px;
+    padding-left: 50px;   
+    background-color: white;
+    border-radius: 50px;
+    color:rgba(11, 202, 212, 1);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: -1;
+    letter-spacing: 1px;
+}
+
+#page2 {
+    margin-top: 15px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 600px 650px;
+    grid-template-rows: 420px;
+    justify-content: center;
+}
+
+#page2 > .image-page2 {
+    background-color: #f8f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sous-image {
+    z-index: 100;
+    position: relative;
+    top: 10px;
+    right: 325px;
+}
+
+.sous-image img{
+   width: 40px;
+}
+
+.text > h4 {
+    margin: 8px 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.text > p {
+    margin: 10px 0;
+    padding: 10px 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.check {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.text > div > p {
+   line-height: 25px;
+}
+
+.contain-inscrir{
+    margin-top: 20px;
+}
+
+.contain-inscrir a {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #0cccd4;
+}
+
+#page3 .title h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left:180px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#page3 .title h1 hr{
+    border: 3px solid rgb(151, 221, 231);
+    width: 5%;
+}
+
+.box-applis{
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cartes {
+    text-decoration: none;
+}
+
+.img-card {
+    display: flex;
+    justify-content:space-around;
+    gap: 40px;
+}
+
+.text-card {
+    text-align: center;
+    color: black;
+    padding-bottom: 50px;
+}
+
+hr{
+    width: 10%;
+    border: 3px solid rgba(213, 237, 239, 1);
+    margin: 5px 0 !important;
+}
+
+.titre{
+    color: white !important;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+.page4 {
+    width: 100%;
+    position: relative;
+}
+
+.slider-div{
+    position: relative;
+    width: 500%;
+    animation: animate 10s linear infinite;
+}
+
+.slider-scroll {
+    position: relative;
+    width: 20%;
+    float: left;
+}
+
+.slider-scroll1 {
+    height: 100vh;
+    background: linear-gradient(103.99deg, #005368 17.41%, #0BCAD4 88.35%);
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-slider1,.left-slider2,.left-slider3{
+    margin-top: 40px;
+    height: 100%;
+    position: relative;
+}
+
+.para1-slider1 {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.left-slider1 .check-list,
+.left-slider2 .check-list,
+.left-slider3 .check-list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.list1 {
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.list2 {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.list3 {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.list {
+    margin-top: 20px;
+}
+
+
+
+.inscription a{
+    text-decoration: none;
+    color: rgba(4, 115, 133, 1);
+    background-color: white;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.slider-scroll2 {
+    height: 100vh;
+    background: #005368;;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-scroll2 .right-slider2 img{
+    width: 800px;
+    margin-right: 600px;
+}
+
+.slider-scroll3 {
+    height: 100vh;
+    background: #E83538;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-scroll3 .right-slider3 img{
+    width: 800px;
+    margin-right: 600px;
+}
+
+#page5{
+    margin-bottom: 800px;
+    width: 100%;
+    height: 50vh;
+}
+
+.titre-page5 {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 800px;
+    padding-left: 100px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.box-container {
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2; 
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box {
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre-page5 hr {
+    border: 3px solid rgb(151, 221, 231);
+    width: 5%;
+    margin: 4px 0;
+}
+
+.titre-box{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+}
+
+.para-box {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #676767;
+}
+
+.btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a {
+    text-decoration: none;
+    border: 1px solid #0BCAD4;
+    border-radius: 30px;
+    color: #0BCAD4;
+    padding: 10px;
+}
+
+.btn a:hover {
+    background-color: #0BCAD4;
+    color: white;
+}
+
+#page6 {
+    height: 60vh;
+    width: 100%;
+}
+
+#page6 > h1{
+   margin-top: 10px;
+   margin-left: 200px;
+}
+
+#page6 > h1 > hr{
+    border: 3px solid rgb(179, 229, 236);
+    width: 5%;
+    margin: 4px 0;
+}
+
+.cards-equipe{
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.5);
+  }
+  
+.card h6{
+    font-style: italic;
+    display: block;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+  .card-image {
+    padding: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    border-radius: none;
+  }
+
+  .card-image  > img {
+    width: 210px;
+  }
+  
+  .author {
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    font-family: "Montserrat", Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .icone-page6 {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .icone-page6  .image-page6 {
+    background-color: grey;
+    width: 35px;
+    height: 35px;
+  }
+
+  .icone-page6  .image-page6:hover {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+  }
+
+  .image-page6  img{
+   width: 35px;
+} 
+
+@keyframes animate {
+	0%
+	{
+		left:0;
+	}
+	16%
+	{
+		left:0;
+	}
+	32%
+	{
+		left:-100%;
+	}
+	48%
+	{
+		left:-100%;
+	}
+	64%
+	{
+		left:-200%;
+	}
+	80%
+	{
+		left:-200%;
+	}
+	100%
+	{
+		left:0%;
+	}
+
+}
+
+#page7 {
+    margin: 0;
+    margin-top: 70px;
+}
+
+.title-page7{
+    padding: 25px 190px;
+    background-color: #f5f5f5;
+}
+
+.title-page7 > h1 > hr {
+    border: 3px solid rgb(179, 229, 236);
+    width: 5%;
+    margin: 4px 0;
+}
+
+.box-page7 {
+   height: 20vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 100px;
+}
+
+.box-page7 > img:nth-child(3){
+    height: 80px;
+    width: 90px;
+}
+
+.box-page7 > img:nth-child(2),
+.box-page7 > img:nth-child(6){
+   height: 60px;
+   width: 100px;
+}
+
+.box-page7 > img:nth-child(5){
+    height: 70px;
+    width: 130px;
+}
+
+#page8{
+    padding: 20px 150px;
+    background-color: #f2f2f2;
+}
+
+#page8 > .titre-page8{
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+#page8 > .titre-page8 > hr{
+    border: 3px solid rgb(118, 213, 228);
+    width: 5%;
+    margin: 4px 0;
+}
+
+#page8 .container-page8 {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 100px;
+}
+
+#page8 .para-page8 {
+    margin: 0;
+    margin-top: 70px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.para-page8 .color-recompense {
+    font-size: 19px;
+    font-weight: 700;
+    color: rgba(11, 202, 212, 1);
+}
+
+#page8 .para1-page8{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+}  
+
+.info-page8{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.info-page8 > a:nth-child(2):hover{
+   letter-spacing: 2px;
+}
+
+.info-page8 .ensavoir-plus{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(11, 202, 212, 1);
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.info-page8 .tel{
+    text-decoration: none;
+    color:#6c757d;
+}
+
+.info-page8 .mobile-contact{
+    color: rgba(11, 202, 212, 1);
+}
+
+#page8 .page8-right{
+    padding-bottom: 400px;
+    background-image: url("images/embassadeur.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center;
+}
+
+.page8-right p{
+    padding: 15px 10px;
+    padding-bottom: 25px;
+    background-color: #fff;
+    border-radius: 9px;
+    width: 275px;
+    position: relative;
+    top: 320px;
+    right: 25px;
+}
+
+@media screen and (max-width:1114px) {
+
+    #page1{
+        margin-top: 0px;
+        background-image: url("images/bg-herd.png");
+        background-repeat: no-repeat;
+        background-position: 80%;
+        background-size:100%;
+        height: 100vh;
+        width: 104%;
+        z-index: -1000;
+    }
+
+    .compte {
+        position: relative;
+        top: 240px;
+        left: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #page1 h1 {
+        position: relative;
+        top: 200px;
+        left: 70px;
+        font-weight: 700;
+        font-size: 44px;
+        color: #ffff;
+        line-height: 45px;
+    }
+
+    #page1 p{
+        position: relative;
+        top: 230px;
+        left: 70px;
+        font-weight: 600;
+        font-size: 30px;
+        color: #ffff;
+        line-height: 45px;
+    }
+
+    #page1 p:nth-child(3){
+        position: relative;
+        top: 250px;
+        left: 70px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    #page1 p:nth-child(3) span{
+        display: block;
+        line-height: 25px; 
+    }
+    
+    #page1 p:nth-child(4){
+        margin-top: 50px;
+        font-size: 17px;
+    }
+    
+    #page2 {
+        margin-top: 15px;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 500px 550px;
+        grid-template-rows: 420px;
+        justify-content: center;
+    }
+
+    #page3 .title h1{
+        margin-top: 100px;
+        margin-bottom: 10px;
+        margin-left:40px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    #page3 .title h1 hr{
+        border: 3px solid rgb(151, 221, 231);
+        width: 5%;
+    }
+    
+    .box-applis{
+        display: grid;
+        grid-template-columns: 280px 280px 280px;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .slider-scroll1 {
+        height: 100vh;
+        background: linear-gradient(103.99deg, #005368 17.41%, #0BCAD4 88.35%);
+        display: grid;
+        grid-template-columns: 35% 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider-scroll2 {
+        height: 100vh;
+        background: #005368;;
+        display: grid;
+        grid-template-columns: 30% 60%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .slider-scroll3 {
+        height: 100vh;
+        background: #E83538;
+        display: grid;
+        grid-template-columns: 30% 60%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page5{
+        margin-bottom: 800px;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .titre-page5 {
+        width: 100%;
+        background-color: #f2f2f2;
+        padding-top: 700px;
+        padding-left: 100px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .box-container {
+        padding: 0;
+        margin: 0;
+        background-color: #f2f2f2; 
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 300px;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    
+
+    #page6 {
+        padding: 20px;
+        height: 125vh;
+        width: 100%;
+    }
+
+    #page6 > h1{
+        margin-top: -90px;
+        margin-left: 50px;
+        font-size: 20px;
+     }
+
+     .cards-equipe{
+        margin: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

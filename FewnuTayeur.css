@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+#whatsapp{
+    position: fixed;
+    margin-top: 60vh;
+    margin-left: 93%;
+    background-color:#008000;
+    border-radius: 50%;
+    padding:15px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#whatsapp i{
+    font-size: 30px;
+}
+
+/* VOICI MON DEUXIEME HEADER  */
+
+#header1{
+    overflow: hidden;
+}
+
+#nav{
+    width: 100vw;
+    height: 4.6vh;
+    background-color:#F5F5F5;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+
+.nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#items i{
+    color: rgba(11, 202, 212, 1);
+}
+
+#items p{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#items p:hover{
+    letter-spacing: 1.5px;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.nav-part2 #icons{
+    margin-left: 1.6vw;
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-part3{
+    display: flex;
+    justify-content: baseline;
+    gap: 10px;
+}
+/* .nav-part3 img{
+    margin-left: 10%;
+}
+.nav-part3 p{
+    margin-left: -20%;
+}
+.nav-part3 i{
+    margin-left: -23%;
+} */
+
+#items p,.nav-part2 p,.nav-part3 p{
+    font-size: 15px;
+    color: #212529;
+}
+
+
+
+/* VOICI MON DEUXIEME HEADER  */
+#header {
+    height: 90px;
+    background-color: #242424;
+    padding: 20px 30px;
+    z-index: 4000;
+}
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.logo-img {
+    height: 60px;
+}
+.menu-icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+}
+nav {
+    position: absolute;
+    background-color: #242424;
+    top:70px;
+    left:0;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 0 15px;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    /* Add your custom styles below to change appearance of links */
+    color: #DAE1E7;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+#lien:hover, #lien:focus {
+    color: white;
+    background-color: #3D4852;
+}
+
+#lien{
+    color: #22292F;
+}
+
+#checkbox {
+    display: none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+
+
+.submenu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: -18px;
+}
+
+#submenu{
+    background-color:#FFFFFF;
+    padding-bottom: 7%;
+    border-radius: 5px;
+    display: none;
+}
+
+/* CSS existant */
+/* Cache le sous-menu par défaut */
+.submenu {
+    display: none;
+}
+
+#menu-html .submenu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 2s ease, transform 2s ease; /* Ajout de la transition */
+}
+
+
+
+
+/* CSS pour afficher le sous-menu lorsqu'on survole le parent */
+#menu-html:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: -18px;
+    opacity: 1;
+    line-height: 2px;
+    transform: translateY(0);
+}
+
+
+
+#temoignage p{
+    padding: 5px 0;
+    color: #212529;
+    font-size: 18px;
+    font-weight: bold;
+}
+#temoignage{
+   background-color: #F2F2F2;
+}
+
+#after{
+    content: "";
+    position: relative;
+    width: 80px;
+    height: 5px;
+    background-color: #05505468;
+}
+
+#page1{
+    background-color: aqua;
+    height: 100vh;
+}
+
+
+
+
+/* VOICI LE CSS POUR NOTRE FOOTER */
+
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: #212529;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 30px;
+    background-color: #212529;
+
+}
+
+#grid p, #grid h2,#grid i{
+    color: white;
+}
+
+
+#flex{
+    padding-top: 70px;
+}
+
+
+#flex .hlm{
+    display: flex;
+    align-items: baseline;
+    line-height: 90px;
+}
+#flex p{
+    line-height: 60px;
+    text-align: start;
+    font-size: 16px;
+}
+#fewnu p{
+    line-height: 60px;
+    text-align: start;
+    font-size: 16px;
+}
+.hlm p{
+    line-height: 60px;
+    text-align: start;
+    font-size: 16px;
+    margin-left:10px;
+}
+
+
+#fewnu p{
+    line-height: 30px;
+}
+#fewnu img{
+    padding-top: 30px;
+}
+
+#social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#social-media i{
+    color: white;
+    font-size: 34px;
+}
+
+#footer hr{
+    color: rgba(255, 255, 255, 0.696);
+    margin-top: 60px;
+}
+
+#politique{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+}
+#politique p{
+   color: white;
+
+}
+
+@media screen and (max-width:780px){
+    /* VOICI LA DEBUT RESPONSIVE DE MON PREMIER CONTENU DE NAVIGATION */
+
+    #nav{
+        display: none;
+    }
+
+    #whatsapp{
+        margin-left: 80%;
+        border-radius: 50%;
+        padding:10px 15px;
+    }
+    
+    #whatsapp i{
+        font-size: 20px;
+    }
+
+
+
+    
+    /* VOICI LE CSS POUR NOTRE FOOTER */
+
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: #242424;
+    overflow: hidden;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns:1fr;
+}
+
+#politique p{
+    padding-left:0px;
+}
+
+#grid p, #grid h2,#grid i{
+    color: white;
+}
+
+
+#flex{
+    padding-top: 70px;
+}
+
+
+#flex .hlm{
+    display: flex;
+    align-items: baseline;
+    line-height: 90px;
+}
+#flex p{
+    line-height: 30px;
+    text-align: start;
+    font-size: 16px;
+}
+#fewnu p{
+    line-height: 30px;
+    text-align: start;
+    font-size: 16px;
+}
+.hlm p{
+    line-height: 30px;
+    text-align: start;
+    font-size: 16px;
+    margin-left: 5%;
+}
+
+
+#fewnu p{
+    line-height: 30px;
+}
+#fewnu img{
+    padding-top: 30px;
+}
+
+#social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#social-media i{
+    color: white;
+    font-size: 34px;
+}
+
+#footer hr{
+    color: rgba(255, 255, 255, 0.696);
+    margin-top: 60px;
+}
+
+#politique{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+}
+#politique p{
+   color: white;
+
+}
+
+
+}
+
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 70px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-left: 20px;
+    }
+
+}
+
+/* h1{
+    font-size: 2.2em;
+    text-align: center;
+    padding: 60px 40px 30px;
+    color: #3D4852;
+    line-height: 1.2;
+}
+p{
+    line-height: 1.6;
+    font-size: 1.2em;
+    padding: 0 40px;
+    text-align: center;
+    color: #3D4852;
+} */

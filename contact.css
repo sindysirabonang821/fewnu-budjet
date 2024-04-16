@@ -1,0 +1,141 @@
+#form-controm{
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+    padding-left: 50px;
+}
+
+.sect h2{
+    padding-left: 30px;
+}
+
+#form-controm P::after{
+    margin-top: 4px;
+    content: "";
+    display: block;
+    margin-left:30px;
+    width: 80px;
+    height: 4px;
+    background-color: #0bcad4d7;
+}
+
+#iframe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#rigthcontact{
+    font-size: 10px;
+    font-weight: lighter;
+    line-height: 31px;
+    color: rgba(136, 136, 136, 1);
+}
+
+#iframe .form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+.form input, textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0bcad4a5;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #66afe9;
+}
+
+.form h5{
+    color: #715757;
+    font-size: 16px;
+}
+
+#button{
+    color: white;
+    background-color: #0BCAD4;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 10vw;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+iframe{
+    padding: 20px;
+}
+
+#leftcontact h3{
+    color: #5d5d5d;
+    font-size: 16px;
+}
+
+#gy{
+    padding: 10px 0;
+    text-align: start;
+}
+#gy h3{
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width:780px){
+   
+
+     /* VOICI LA DEBUT RESPONSIVE DE MON PREMIER CONTENU DE NAVIGATION */
+
+    .sect h2{
+        transform: translateX(-20%);
+        padding-top: 90px;
+    }
+    
+    #form-controm P::after{
+        margin-top: 4px;
+        content: "";
+        display: block;
+        transform: translateX(-80%);
+        width: 80px;
+        height: 4px;
+        background-color: #0bcad4d7;
+    }
+    
+    #iframe{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 90px;
+        padding-left:0;
+        transform: translateX(-12%);
+        padding-top: 30px;
+    }
+    #para{
+       width: 90vw;
+    }
+
+    .form{
+        width: 70vw;
+    }
+
+    #button{
+        width: 30vw;
+    }
+    iframe{
+        width: 400px;
+        height: 200px;
+        transform: translateX(-6%);
+    }
+    
+}
+
+
+
